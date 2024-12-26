@@ -1,0 +1,6 @@
+[
+  {
+    "query": "alter table In_Service add Service_Type varchar(10) null",
+    "error": "Column names in each table must be unique. Column name 'Service_Type' in table 'In_Service' is specified more than once."
+  }
+]

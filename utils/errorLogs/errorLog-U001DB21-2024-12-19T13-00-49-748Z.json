@@ -1,0 +1,6 @@
+[
+  {
+    "query": "ALTER TABLE TV_ICM_MST ADD TvDo int;",
+    "error": "Cannot find the object \"TV_ICM_MST\" because it does not exist or you do not have permissions."
+  }
+]

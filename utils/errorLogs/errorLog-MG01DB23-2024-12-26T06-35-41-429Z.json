@@ -1,0 +1,10 @@
+[
+  {
+    "query": "ALTER TABLE InventoryItems ADD PurchasePostLedg [nvarchar](10);",
+    "error": "Column names in each table must be unique. Column name 'PurchasePostLedg' in table 'InventoryItems' is specified more than once."
+  },
+  {
+    "query": "ALTER TABLE InventoryItems ADD SalePostLedg [nvarchar](10);",
+    "error": "Column names in each table must be unique. Column name 'SalePostLedg' in table 'InventoryItems' is specified more than once."
+  }
+]

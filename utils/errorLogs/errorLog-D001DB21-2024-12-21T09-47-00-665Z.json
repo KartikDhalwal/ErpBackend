@@ -1,0 +1,22 @@
+[
+  {
+    "query": "CREATE TABLE [dbo].[Complaints](\n          [ComplaintID] [int] IDENTITY(1,1) NOT NULL,\n          [Title] [nvarchar](255) NOT NULL,\n          [Description] [nvarchar](max) NOT NULL,\n          [CreatedBy] [nvarchar](25) NULL,\n          [DOC_PATH] [nvarchar](255) NULL,\n          [DateCreated] [datetime] NULL,\n          [Status] [nvarchar](50) NULL\n        ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]",
+    "error": "There is already an object named 'Complaints' in the database."
+  },
+  {
+    "query": "ALTER TABLE [dbo].[Complaints] ADD  DEFAULT (getdate()) FOR [DateCreated]",
+    "error": ""
+  },
+  {
+    "query": "ALTER TABLE [dbo].[Complaints] ADD  DEFAULT ('Open') FOR [Status]",
+    "error": ""
+  },
+  {
+    "query": "CREATE TABLE [dbo].[ComplaintResponse](\n      [ResponseID] [int] IDENTITY(1,1) NOT NULL,\n      [ComplaintID] [int] NOT NULL,\n      [EmployeeID] [varchar](50) NOT NULL,\n      [ResponseText] [text] NULL,\n      [DateResponded] [datetime] NULL,\n      [Status] [varchar](50) NULL,\n    PRIMARY KEY CLUSTERED \n    (\n      [ResponseID] ASC\n    )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]\n    ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]",
+    "error": "There is already an object named 'ComplaintResponse' in the database."
+  },
+  {
+    "query": "ALTER TABLE [dbo].[ComplaintResponse] ADD  DEFAULT ('Pending') FOR [Status]",
+    "error": ""
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "query": "CREATE TABLE [dbo].[Daily_Cash_Sum](\n        [UID] [int] NULL,\n        [Loc_code] [int] NULL,\n        [user_code] [nvarchar](255) NULL,\n        [Tran_Date] [date] NULL,\n        [Opening_Bal] [money] NULL,\n        [Today_Coll] [money] NULL,\n        [Cash_to_bank] [money] NULL,\n        [Cash_to_petty_cash] [money] NULL,\n        [Payment_voucher] [money] NULL,\n        [Closing_Bal] [money] NULL,\n        [Books_Closing_Bal] [money] NULL,\n        [Diffe_Bal] [money] NULL,\n        [export_type] [nvarchar](255) NULL,\n        [Create_at] [datetime] NULL\n      ) ON [PRIMARY]",
+    "error": "There is already an object named 'Daily_Cash_Sum' in the database."
+  },
+  {
+    "query": "ALTER TABLE [dbo].[Daily_Cash_Sum] ADD  DEFAULT (getdate()) FOR [Create_at]",
+    "error": ""
+  }
+]

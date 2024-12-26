@@ -1,0 +1,6 @@
+[
+  {
+    "query": "ALTER TABLE TV_DO ADD FIN_AMT money",
+    "error": "Column names in each table must be unique. Column name 'FIN_AMT' in table 'TV_DO' is specified more than once."
+  }
+]

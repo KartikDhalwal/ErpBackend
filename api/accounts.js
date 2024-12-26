@@ -1,0 +1,25 @@
+const express = require("express");
+const router = express.Router();
+const Accounts = require("../routes/accounts");
+const multer = require("multer");
+
+router.post("/DmsRowDataSave", Accounts.DmsRowDataSave);
+router.post("/DmsRowDataUpdate", Accounts.DmsRowDataUpdate);
+router.post("/findMasters", Accounts.findMasters);
+router.post("/FindInvNo", Accounts.FindInvNo);
+router.post("/FindLedgerData", Accounts.FindLedgerData);
+router.post("/VoucherView", Accounts.VoucherView);
+router.post("/SaveVoucher", Accounts.SaveVoucher);
+router.post("/FinVoucher", Accounts.FinVoucher);
+router.post("/UpdateVoucher", Accounts.UpdateVoucher);
+router.post("/BranchState", Accounts.BranchState);
+router.post("/FindSeqNo", Accounts.FindSeqNo);
+router.post("/EntryView", Accounts.EntryView);
+router.post("/EntryDataFetch", Accounts.EntryDataFetch);
+router.post("/EntryPrint", Accounts.EntryPrint);
+router.post("/ItemWiseTransaction", Accounts.ItemWiseTransaction);
+router.post("/findMastersItems", Accounts.findMastersItems);
+router.post("/BrWiseItemsOpSave", Accounts.BrWiseItemsOpSave);
+router.post("/findMastersLedger", Accounts.findMastersLedger);
+router.post("/CancelEntry", Accounts.CancelEntry);
+module.exports = router;

@@ -1,0 +1,95 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+tmp/
+out/
+
+# Debug tools
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+jest/
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.lock
+
+# Logs from npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional npm cache directory
+.npm/
+
+# IDE specific settings
+.vscode/
+.idea/
+*.iml
+
+# Git-specific files
+*.orig
+*.rej
+*.merge_file.*
+
+# Ignoring uploads or user data
+uploads/
+
+# Ignoring sensitive data files
+secrets.json
+private.pem
+public.pem
+
+# Ignore documentation files
+*.docx
+*.pdf
+*.pptx
+
+# Ignore webpack output
+/.webpack/
+
+# Ignore compiled files
+*.js.map
+*.tsbuildinfo
+
+# Ignore Next.js-specific files
+.next/
+
+# Ignore static files for front-end frameworks
+/static/

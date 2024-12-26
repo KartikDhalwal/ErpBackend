@@ -1,0 +1,6 @@
+[
+  {
+    "query": "ALTER TABLE TV_ICM_MST ADD TvDo int;",
+    "error": "Column names in each table must be unique. Column name 'TvDo' in table 'TV_ICM_MST' is specified more than once."
+  }
+]
