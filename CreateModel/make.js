@@ -4,11 +4,11 @@ const path = require('path');
 async function generateModels(compCode) {
     try {
         const dbConfig = {
-            username: "developer1",
-            password: "developer@#5010",
-            host: "103.74.65.249",
+            username: "xyz",
+            password: "123",
+            host: "74484848484",
             port: 4650,
-            database: "DBCON",
+            database: "fcjnfd",
             dialect: "mssql",
           };
         const auto = new SequelizeAuto(dbConfig.database, dbConfig.username, dbConfig.password, {
